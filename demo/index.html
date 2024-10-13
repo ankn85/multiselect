@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <title>Multi Select JS</title>
+    <!-- Include the Multi Select stylesheet -->
+    <link rel="stylesheet" href="src/jquery.multiselect.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            background-color: #f3f4f7;
+        }
+
+        .row {
+            margin: 15px 0 0 15px;
+        }
+
+        .div-25 {
+            display: inline-block;
+            width: 25%;
+            vertical-align: top;
+        }
+
+        .div-25 label {
+            color: #474b50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="div-25">
+            <label for="fruits">Fruits</label>
+            <select id="fruits" name="fruits" data-placeholder="Select fruits" multiple data-multi-select>
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Blackberry">Blackberry</option>
+                <option value="Blueberry">Blueberry</option>
+                <option value="Cherry">Cherry</option>
+                <option value="Cranberry">Cranberry</option>
+                <option value="Grapes">Grapes</option>
+                <option value="Kiwi">Kiwi</option>
+                <option value="Mango">Mango</option>
+                <option value="Orange">Orange</option>
+                <option value="Peach">Peach</option>
+                <option value="Pear">Pear</option>
+                <option value="Pineapple">Pineapple</option>
+                <option value="Raspberry">Raspberry</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Watermelon">Watermelon</option>
+            </select>
+        </div>
+        <div class="div-25"><label for="cars">Car Manufacturers</label>
+            <select id="cars" name="cars" data-placeholder="Select car manufacturers" data-max="2" data-search="false"
+                data-select-all="false" data-width="300px" data-height="50px" multiple data-multi-select>
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Chevrolet">Chevrolet</option>
+            </select>
+        </div>
+        <div class="div-25"><label for="dynamic">Dynamic Select</label>
+            <select id="dynamic" name="dynamic"></select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="div-25">
+            <div id="tree-1"></div>
+            <p class="sel">Selected areas: <span id="selected-1">Nothing selected</span></p>
+        </div>
+    </div>
+    <!-- Include the Multi Select JS class -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="src/jquery.multiselect.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
